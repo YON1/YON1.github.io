@@ -1,36 +1,68 @@
 <!DOCTYPE html>
 <!-- saved from url=(0044)https://sealoffantasy.de/guestbook/view/?c=2 -->
 <html>
-.spoiler{ 
-  color: white; 
-  background-color:black;
+
+<head>
+<style>
+.button {
+  background-color: black;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 550px;
 }
+</style>
+
+</head>
 
 <body style="background-color:black; color:white;">
 <p><center><img src="https://imgur.com/a9X2eog.jpg" alt="a9X2eog.jpg" /></p>
 
-<p>[spoiler='Rah! Rah!' Kräht es irgendwo her von den Dächern herab.<br />
+<button class="button" onclick="toggle('intro')">
+'Rah! Rah!' Kräht es irgendwo her von den Dächern herab.<br />
 Irgendwie fühlt man sich in Gegenwart dieser Frau nie unbeobachtet.<br />
-<span style="color: #000000;">♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣</span>]<br />
+</button>
+
+<div id="intro" style="display:none;">
 <img src="https://imgur.com/odcecJ3.jpg" alt="odcecJ3.jpg" /></p>
+</div>
 
-<p>[spoiler=Kühl ist der Blick, mit dem die Norm ihre Umgebung sondiert. <br />
+<button class="button" onclick="toggle('eye')">
+Kühl ist der Blick, mit dem die Norm ihre Umgebung sondiert. <br />
 Distanziert, wenn auch nicht verträumt. Aufmerksam. Evaluierend.<br />
-<span style="color: #000000;">♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣</span>]<br />
-<img src="https://imgur.com/lfPfZlj.jpg" alt="lfPfZlj.jpg" /><br />
-[/spoiler]<br />
-[/spoiler]</p>
+</button>
 
-<p>[spoiler=Doc Meynard betreibt eine kleine Schattenklinik in Everett. <br />
+<div id="eye" style="display:none;">
+<img src="https://imgur.com/lfPfZlj.jpg" alt="lfPfZlj.jpg" /><br />
+</div>
+
+<button class="button" onclick="toggle('clinic')">
+Doc Meynard betreibt eine kleine Schattenklinik in Everett. <br />
 Vorsicht vor dem Hund!<br />
-<span style="color: #000000;">♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣</span>]<br />
+</button>
+
+<div id="clinic" style="display:none;">
 <img src="https://imgur.com/ULP5VHW.jpg" alt="ULP5VHW.jpg" /></p>
 
-<p>[spoiler=Eingerahmt von Mauern und Stacheldraht hinter dornigen Rosenbüschen <br />
+<button class="button" onclick="toggle('house')">
+Eingerahmt von Mauern und Stacheldraht hinter dornigen Rosenbüschen <br />
 liegt das kleine Anwesen samt Klinik nicht gerade in der besten Wohngegend.<br />
+</button>
+
+<div id="house" style="display:none;">
+<p><img src="https://imgur.com/5DwHsh3.jpg" alt="5DwHsh3.jpg" /></p>
+</div>
+
+</div>
+
+<p>[spoiler=
 <span style="color: #000000;">♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣</span>]</p>
 
-<p><img src="https://imgur.com/5DwHsh3.jpg" alt="5DwHsh3.jpg" /></p>
 
 <p>[/spoiler]</p>
 
@@ -52,9 +84,12 @@ hinein traut, findet sich aber in den Händen einer fähigen Chirurgin wieder.<b
 <p><span style="color: #120521;">♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣</span><br />
 [/spoiler]</p>
 
-<p>[spoiler=Die SIN gibt nur das Nötigste her. <br />
+<button class="button" onclick="toggle('sin')">
+Die SIN gibt nur das Nötigste her. <br />
 Ein gewisses Faible für Mode und Schminke sieht man der Frau aber wohl an.<br />
-<span style="color: #000000;">♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣</span>]</p>
+</button>
+
+<div id="sin" style="display:none;">
 
 <p>[table]</p>
 
@@ -99,42 +134,39 @@ Ein gewisses Faible für Mode und Schminke sieht man der Frau aber wohl an.<br /
 <a href="https://subbass.bandcamp.com/track/krood-tibetan-step">Tibetan Step</a><br />
 [/spoiler]</p>
 
-<p>[spoiler=Die Alltagskleidung ist gepflegt, und der Umgebung angemessen.<br />
+</div>
+
+<button class="button" onclick="toggle('clothes')">
+Die Alltagskleidung ist gepflegt, und der Umgebung angemessen.<br />
 Zu besonderen Anlässen kann man sie aber auch im Festtagskleid erwischen.<br />
-<span style="color: #000000;">♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣</span>]</p>
-
-<p><img src="https://imgur.com/dzLtmuh.jpg" alt="dzLtmuh.jpg" /></p>
-
-<p><span style="color: #120521;">♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣</span><br />
-[/spoiler]</p>
+</button>
+<div id="clothes" style="display:none;"> 
+<p><img src="https://imgur.com/dzLtmuh.jpg" alt="dzLtmuh.jpg" /></p> 
+</div>
 
 <p>Preisliste: <a href="https://shadowhelix.de/Stra%C3%9Fendoc"> >>> Shadowhelix >>> </a></p>
 
 <p><img src="https://imgur.com/GbpSS6o.jpg" alt="GbpSS6o.jpg" /><br />
+
+<button class="button" onclick="toggle('myDIV')">
+♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣
+</button>
+
+<div id="myDIV" style="display:none;"> 2 </div>
+
 </center></p>
 
-<span class="spoiler" >test</span>
-
-<button id=”spoiler_button” name=”spoiler_button” type=”button”> Toggle Spoilers
-</button>
-<div id=”spoiler_text” style=”display: none;”> Anything you want to hide goes in here. </div>
-
-<p>ende</p>
+<p>ende..</p>
 
 <script>
- 
-  var divToggleVis = document.getElementById('spoiler_text');
-  var button = document.getElementById('spoiler_button');
- 
-  button.onclick = function() {
-      if (divToggleVis.style.display === 'none') {
-          divToggleVis.style.display = 'block';
-      } else {
-          divToggleVis.style.display = 'none';
-      }
- 
-  };
- 
+function toggle(p1) {
+	var x = document.getElementById(p1);
+	if (x.style.display === 'none') {
+		x.style.display = 'block';
+	} else {
+		x.style.display = 'none';
+	}
+}
 </script>
 
 </body>
