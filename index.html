@@ -7,12 +7,12 @@
 .button {
   background-color: black;
   color: white;
-  padding: 15px 32px;
+  padding: 15px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: 14px 2px;
   cursor: pointer;
   width: 550px;
 }
@@ -30,6 +30,7 @@ Irgendwie fühlt man sich in Gegenwart dieser Frau nie unbeobachtet.<br />
 
 <div id="intro" style="display:none;">
 <img src="https://imgur.com/odcecJ3.jpg" alt="odcecJ3.jpg" /></p>
+<br />
 </div>
 
 <button class="button" onclick="toggle('eye')">
@@ -39,6 +40,7 @@ Distanziert, wenn auch nicht verträumt. Aufmerksam. Evaluierend.<br />
 
 <div id="eye" style="display:none;">
 <img src="https://imgur.com/lfPfZlj.jpg" alt="lfPfZlj.jpg" /><br />
+<br />
 </div>
 
 <button class="button" onclick="toggle('clinic')">
@@ -50,43 +52,42 @@ Vorsicht vor dem Hund!<br />
 <img src="https://imgur.com/ULP5VHW.jpg" alt="ULP5VHW.jpg" /></p>
 
 <button class="button" onclick="toggle('house')">
-Eingerahmt von Mauern und Stacheldraht hinter dornigen Rosenbüschen <br />
-liegt das kleine Anwesen samt Klinik nicht gerade in der besten Wohngegend.<br />
+Eingerahmt von Mauern und Stacheldraht hinter dornigen Rosenbüschen liegt das kleine Anwesen samt Klinik nicht gerade in der besten Wohngegend.
 </button>
 
 <div id="house" style="display:none;">
 <p><img src="https://imgur.com/5DwHsh3.jpg" alt="5DwHsh3.jpg" /></p>
+<br />
 </div>
 
-</div>
-
-<p>[spoiler=
-<span style="color: #000000;">♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣</span>]</p>
-
-
-<p>[/spoiler]</p>
-
-<p>[spoiler=In der Einfahrt steht ein etwas in die Jahre gekommener Chevvy, <br />
+<button class="button" onclick="toggle('car')">
+In der Einfahrt steht ein etwas in die Jahre gekommener Chevvy, <br />
 um die Lebenden wie die Toten zu transportieren.<br />
-<span style="color: #000000;">♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣</span>]</p>
+</button>
 
+<div id="car" style="display:none;">
 <p><img src="https://imgur.com/lNXfzpt.jpg" alt="lNXfzpt.jpg" /></p>
+<br />
+</div>
 
-<p>[/spoiler]</p>
+<button class="button" onclick="toggle('op')">
+Deltaware darf man hier nicht erwarten. Wer sich dennoch hinein traut,<br />
+findet sich aber in den Händen einer fähigen Chirurgin wieder.<br />
+</button>
 
-<p>[spoiler=Beta- oder gar Deltaware darf man hier nicht erwarten. Wer sich dennoch<br />
-hinein traut, findet sich aber in den Händen einer fähigen Chirurgin wieder.<br />
-<span style="color: #000000;">♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣</span>]</p>
-
+<div id="op" style="display:none;">
 <p><img src="https://imgur.com/3ygLMre.jpg" alt="3ygLMre.jpg" /><br />
-[/spoiler]</p>
+<p>Preisliste: <a href="https://shadowhelix.de/Stra%C3%9Fendoc"> >>> Shadowhelix >>> </a></p>
+<br />
+</div>
 
-<p><span style="color: #120521;">♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣</span><br />
-[/spoiler]</p>
+<p style="color:#555555;">♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣♣</p>
+<br />
+</div>
 
 <button class="button" onclick="toggle('sin')">
 Die SIN gibt nur das Nötigste her. <br />
-Ein gewisses Faible für Mode und Schminke sieht man der Frau aber wohl an.<br />
+Ein Faible für Mode und Schminke sieht man der Frau aber an.<br />
 </button>
 
 <div id="sin" style="display:none;">
@@ -134,17 +135,18 @@ Ein gewisses Faible für Mode und Schminke sieht man der Frau aber wohl an.<br /
 <a href="https://subbass.bandcamp.com/track/krood-tibetan-step">Tibetan Step</a><br />
 [/spoiler]</p>
 
+<br />
 </div>
 
 <button class="button" onclick="toggle('clothes')">
 Die Alltagskleidung ist gepflegt, und der Umgebung angemessen.<br />
 Zu besonderen Anlässen kann man sie aber auch im Festtagskleid erwischen.<br />
 </button>
+
 <div id="clothes" style="display:none;"> 
 <p><img src="https://imgur.com/dzLtmuh.jpg" alt="dzLtmuh.jpg" /></p> 
+<br />
 </div>
-
-<p>Preisliste: <a href="https://shadowhelix.de/Stra%C3%9Fendoc"> >>> Shadowhelix >>> </a></p>
 
 <p><img src="https://imgur.com/GbpSS6o.jpg" alt="GbpSS6o.jpg" /><br />
 
