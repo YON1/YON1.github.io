@@ -23,7 +23,7 @@
 <body style="background-color:black; color:white;">
 <p><center><img src="https://imgur.com/a9X2eog.jpg" alt="a9X2eog.jpg" /></p>
 
-<button class="button" id='introBtn' onclick="toggle('intro', this.id)">
+<button class="button" id='introBtn' onclick="toggle('intro')">
 'Rah! Rah!' Kräht es irgendwo her von den Dächern herab.<br />
 Irgendwie fühlt man sich in Gegenwart dieser Frau nie unbeobachtet.<br />
 </button>
@@ -33,7 +33,7 @@ Irgendwie fühlt man sich in Gegenwart dieser Frau nie unbeobachtet.<br />
 <br />
 </div>
 
-<button class="button" id='eyeBtn' onclick="toggle('eye', this.id)">
+<button class="button" id='eyeBtn' onclick="toggle('eye')">
 Kühl ist der Blick, mit dem die Norm ihre Umgebung sondiert. <br />
 Distanziert, wenn auch nicht verträumt. Aufmerksam. Evaluierend.<br />
 </button>
@@ -43,7 +43,7 @@ Distanziert, wenn auch nicht verträumt. Aufmerksam. Evaluierend.<br />
 <br />
 </div>
 
-<button class="button" id='clinicBtn' onclick="toggle('clinic', this.id)">
+<button class="button" id='clinicBtn' onclick="toggle('clinic')">
 Doc Meynard betreibt eine kleine Schattenklinik in Everett. <br />
 Vorsicht vor dem Hund!<br />
 </button>
@@ -51,7 +51,7 @@ Vorsicht vor dem Hund!<br />
 <div id="clinic" style="display:none;">
 <img src="https://imgur.com/ULP5VHW.jpg" alt="ULP5VHW.jpg" /></p>
 
-<button class="button" id='houseBtn' onclick="toggle('house', this.id)">
+<button class="button" id='houseBtn' onclick="toggle('house')">
 Eingerahmt von Mauern und Stacheldraht hinter dornigen Rosenbüschen liegt das kleine Anwesen samt Klinik nicht gerade in der besten Wohngegend.
 </button>
 
@@ -60,7 +60,7 @@ Eingerahmt von Mauern und Stacheldraht hinter dornigen Rosenbüschen liegt das k
 <br />
 </div>
 
-<button class="button" id='carBtn' onclick="toggle('car', this.id)">
+<button class="button" id='carBtn' onclick="toggle('car')">
 In der Einfahrt steht ein etwas in die Jahre gekommener Chevvy, <br />
 um die Lebenden wie die Toten zu transportieren.<br />
 </button>
@@ -70,7 +70,7 @@ um die Lebenden wie die Toten zu transportieren.<br />
 <br />
 </div>
 
-<button class="button" id='opBtn' onclick="toggle('op', this.id)">
+<button class="button" id='opBtn' onclick="toggle('op')">
 Deltaware darf man hier nicht erwarten. Wer sich dennoch hinein traut,<br />
 findet sich aber in den Händen einer fähigen Chirurgin wieder.<br />
 </button>
@@ -85,7 +85,7 @@ findet sich aber in den Händen einer fähigen Chirurgin wieder.<br />
 <br />
 </div>
 
-<button class="button" id='sinBtn' onclick="toggle('sin', this.id)">
+<button class="button" id='sinBtn' onclick="toggle('sin')">
 Die SIN gibt nur das Nötigste her. <br />
 Ein Faible für Mode und Schminke sieht man der Frau aber an.<br />
 </button>
@@ -138,7 +138,7 @@ Ein Faible für Mode und Schminke sieht man der Frau aber an.<br />
 <br />
 </div>
 
-<button class="button" id='clothesBtn' onclick="toggle('clothes', this.id)">
+<button class="button" id='clothesBtn' onclick="toggle('clothes')">
 Die Alltagskleidung ist gepflegt, und der Umgebung angemessen.<br />
 Zu besonderen Anlässen kann man sie aber auch im Festtagskleid erwischen.<br />
 </button>
@@ -163,6 +163,15 @@ function toggle(p1, p2) {
 	} else {
 		splr.style.display = 'none';
 		btn.style.color = 'white';
+	}
+}
+
+function toggle(p1) {
+	var splr = document.getElementById(p1);
+	if (splr.style.display === 'none') {
+		splr.style.display = 'block';
+	} else {
+		splr.style.display = 'none';
 	}
 }
 
