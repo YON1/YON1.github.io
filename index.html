@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <!-- saved from url=(0044)https://sealoffantasy.de/guestbook/view/?c=2 -->
 <html>
+.spoiler{ 
+  color: white; 
+  background-color:black;
+}
+
 <body style="background-color:black; color:white;">
 <p><center><img src="https://imgur.com/a9X2eog.jpg" alt="a9X2eog.jpg" /></p>
 
@@ -136,6 +141,28 @@ Oft in Gesellschaft von Begleitern, die aussehen wie aus Tinte gegossen.<br />
 
 <p><img src="https://imgur.com/GbpSS6o.jpg" alt="GbpSS6o.jpg" /><br />
 </center></p>
+
+<span class="spoiler" >test</span>
+
+<button id=”spoiler_button” name=”spoiler_button” type=”button”> 
+<div id=”spoiler_text” style=”display: none;”> Anything you want to hide goes in here. </div>
+</button>
+
+<script>
+ 
+  var divToggleVis = document.getElementById('spoiler_text');
+  var button = document.getElementById('spoiler_button');
+ 
+  button.onclick = function() {
+      if (divToggleVis.style.display === 'none') {
+          divToggleVis.style.display = 'block';
+      } else {
+          divToggleVis.style.display = 'none';
+      }
+ 
+  };
+ 
+</script>
 
 </body>
 </html>
